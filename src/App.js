@@ -1,12 +1,12 @@
 import React from 'react';
-import ReactTooltip from 'react-tooltip';
+import { Tooltip } from 'react-tooltip';  // Correct the import statement
 import './App.css';
 
 function AlbumCard() {
   return (
     <div className="album-card">
       <img
-        src="https://via.placeholder.com/150"
+        src="https://d1csarkz8obe9u.cloudfront.net/posterpreviews/classic-song-mixtape-album-cover-template-design-3ba3255137894fac49ae81b1346b289e_screen.jpg?ts=1635384548"
         alt="Album Art"
         data-tip
         data-for="albumTooltip"
@@ -15,9 +15,9 @@ function AlbumCard() {
         <span>12417 Follows</span>
         <h3>Lighthearted Childhood</h3>
       </div>
-      <ReactTooltip id="albumTooltip" place="top" effect="solid">
+      <Tooltip id="albumTooltip" place="top" effect="solid">
         42 songs
-      </ReactTooltip>
+      </Tooltip>
     </div>
   );
 }
